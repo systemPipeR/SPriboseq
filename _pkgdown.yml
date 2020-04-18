@@ -23,11 +23,11 @@ template:
 #      index_name: 
        bootswatch: flatly
     ganalytics: UA-158796879-1
-
 navbar:
   structure:
     left:
     - home
+    - articles
     right: 
     - github
   components:
