@@ -58,16 +58,10 @@
     Workflow
   </a>
 </li>
-<li>
-  <a></a>
-</li>
-<li>
-  <a href="../articles/systemPipeRIBOseq.html">Get started</a>
-</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/tgirke/systemPipeR">
+  <a href="https://github.com/systemPipeR/systemPipeRIBOseq">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -94,7 +88,7 @@
       <h1 data-toc-skip>RIBO-Seq Workflow Template</h1>
                         <h4 class="author">Author: Daniela Cassol (<a href="mailto:danielac@ucr.edu" class="email">danielac@ucr.edu</a>) and Thomas Girke (<a href="mailto:thomas.girke@ucr.edu" class="email">thomas.girke@ucr.edu</a>)</h4>
             
-            <h4 class="date">Last update: 18 April, 2020</h4>
+            <h4 class="date">Last update: 29 April, 2020</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/systemPipeR/systemPipeRIBOseq/blob/master/vignettes/systemPipeRIBOseq.Rmd"><code>vignettes/systemPipeRIBOseq.Rmd</code></a></small>
       <div class="hidden name"><code>systemPipeRIBOseq.Rmd</code></div>
@@ -206,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="no">trim</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/renderWF.html">renderWF</a></span>(<span class="no">trim</span>, <span class="kw">inputvars</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="kw">FileName</span> <span class="kw">=</span> <span class="st">"_FASTQ_PATH1_"</span>,
     <span class="kw">SampleName</span> <span class="kw">=</span> <span class="st">"_SampleName_"</span>))
 <span class="no">trim</span>
-<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/SYSargs2list-methods.html">output</a></span>(<span class="no">trim</span>)[<span class="fl">1</span>:<span class="fl">2</span>]</pre></body></html></div>
+<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/sysargs2-methods.html">output</a></span>(<span class="no">trim</span>)[<span class="fl">1</span>:<span class="fl">2</span>]</pre></body></html></div>
 <p>Next, we execute the code for trimming all the raw data.</p>
 <div class="sourceCode" id="cb8"><html><body><pre class="r"><span class="no">fctpath</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html">system.file</a></span>(<span class="st">"extdata"</span>, <span class="st">"custom_Fct.R"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"systemPipeR"</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/source.html">source</a></span>(<span class="no">fctpath</span>)
@@ -246,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <span class="kw">input_file</span> <span class="kw">=</span> <span class="st">"hisat2-index.yml"</span>, <span class="kw">dir_path</span> <span class="kw">=</span> <span class="no">dir_path</span>)
 <span class="no">idx</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/renderWF.html">renderWF</a></span>(<span class="no">idx</span>)
 <span class="no">idx</span>
-<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/SYSargs2list-methods.html">cmdlist</a></span>(<span class="no">idx</span>)
+<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/sysargs2-methods.html">cmdlist</a></span>(<span class="no">idx</span>)
 
 <span class="co">## Run</span>
 <span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/runCommandline.html">runCommandline</a></span>(<span class="no">idx</span>, <span class="kw">make_bam</span> <span class="kw">=</span> <span class="fl">FALSE</span>)</pre></body></html></div>
@@ -257,8 +251,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="no">args</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/renderWF.html">renderWF</a></span>(<span class="no">args</span>, <span class="kw">inputvars</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="kw">FileName</span> <span class="kw">=</span> <span class="st">"_FASTQ_PATH1_"</span>,
     <span class="kw">SampleName</span> <span class="kw">=</span> <span class="st">"_SampleName_"</span>))
 <span class="no">args</span>
-<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/SYSargs2list-methods.html">cmdlist</a></span>(<span class="no">args</span>)[<span class="fl">1</span>:<span class="fl">2</span>]
-<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/SYSargs2list-methods.html">output</a></span>(<span class="no">args</span>)[<span class="fl">1</span>:<span class="fl">2</span>]
+<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/sysargs2-methods.html">cmdlist</a></span>(<span class="no">args</span>)[<span class="fl">1</span>:<span class="fl">2</span>]
+<span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/sysargs2-methods.html">output</a></span>(<span class="no">args</span>)[<span class="fl">1</span>:<span class="fl">2</span>]
 
 <span class="co">## Run</span>
 <span class="no">args</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/systemPipeR/man/runCommandline.html">runCommandline</a></span>(<span class="no">args</span>)</pre></body></html></div>
@@ -683,13 +677,13 @@ Figure 9: Heat map with hierarchical clustering dendrograms of DEGs
 <h1 class="hasAnchor">
 <a href="#version-information" class="anchor"></a>Version Information</h1>
 <div class="sourceCode" id="cb45"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/sessionInfo.html">sessionInfo</a></span>()</pre></body></html></div>
-<pre><code>## R Under development (unstable) (2020-03-31 r78116)
+<pre><code>## R version 4.0.0 (2020-04-24)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 20.04 LTS
 ## 
 ## Matrix products: default
-## BLAS:   /usr/local/lib/R/lib/libRblas.so
-## LAPACK: /usr/local/lib/R/lib/libRlapack.so
+## BLAS:   /usr/local/bin/R/lib/R/lib/libRblas.so
+## LAPACK: /usr/local/bin/R/lib/R/lib/libRlapack.so
 ## 
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
@@ -704,69 +698,70 @@ Figure 9: Heat map with hierarchical clustering dendrograms of DEGs
 ## [6] utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] systemPipeR_1.21.6          ShortRead_1.45.4           
+##  [1] systemPipeR_1.21.13         ShortRead_1.45.4           
 ##  [3] GenomicAlignments_1.23.2    SummarizedExperiment_1.17.5
 ##  [5] DelayedArray_0.13.12        matrixStats_0.56.0         
-##  [7] Biobase_2.47.3              BiocParallel_1.21.2        
+##  [7] Biobase_2.47.3              BiocParallel_1.21.3        
 ##  [9] Rsamtools_2.3.7             Biostrings_2.55.7          
 ## [11] XVector_0.27.2              GenomicRanges_1.39.3       
-## [13] GenomeInfoDb_1.23.16        IRanges_2.21.8             
+## [13] GenomeInfoDb_1.23.17        IRanges_2.21.8             
 ## [15] S4Vectors_0.25.15           BiocGenerics_0.33.3        
-## [17] BiocStyle_2.15.6           
+## [17] BiocStyle_2.15.8           
 ## 
 ## loaded via a namespace (and not attached):
 ##   [1] colorspace_1.4-1         rjson_0.2.20            
 ##   [3] hwriter_1.3.2            ellipsis_0.3.0          
 ##   [5] rprojroot_1.3-2          fs_1.4.1                
 ##   [7] rstudioapi_0.11          bit64_0.9-7             
-##   [9] AnnotationDbi_1.49.1     fansi_0.4.1             
-##  [11] codetools_0.2-16         splines_4.1.0           
-##  [13] knitr_1.28               annotate_1.65.1         
-##  [15] GO.db_3.10.0             dbplyr_1.4.2            
+##   [9] AnnotationDbi_1.49.1     codetools_0.2-16        
+##  [11] splines_4.0.0            knitr_1.28              
+##  [13] jsonlite_1.6.1           annotate_1.65.1         
+##  [15] GO.db_3.10.0             dbplyr_1.4.3            
 ##  [17] png_0.1-7                pheatmap_1.0.12         
-##  [19] graph_1.65.2             BiocManager_1.30.10     
-##  [21] compiler_4.1.0           httr_1.4.1              
+##  [19] graph_1.65.3             BiocManager_1.30.10     
+##  [21] compiler_4.0.0           httr_1.4.1              
 ##  [23] GOstats_2.53.0           backports_1.1.6         
 ##  [25] assertthat_0.2.1         Matrix_1.2-18           
-##  [27] limma_3.43.6             cli_2.0.2               
-##  [29] formatR_1.7              htmltools_0.4.0         
-##  [31] prettyunits_1.1.1        tools_4.1.0             
-##  [33] gtable_0.3.0             glue_1.4.0              
-##  [35] GenomeInfoDbData_1.2.2   Category_2.53.1         
-##  [37] dplyr_0.8.5              batchtools_0.9.13       
-##  [39] rappdirs_0.3.1           Rcpp_1.0.4.6            
-##  [41] pkgdown_1.5.1            vctrs_0.2.4             
-##  [43] rtracklayer_1.47.0       xfun_0.13               
-##  [45] stringr_1.4.0            lifecycle_0.2.0         
-##  [47] XML_3.99-0.3             edgeR_3.29.1            
-##  [49] zlibbioc_1.33.1          MASS_7.3-51.5           
-##  [51] scales_1.1.0             BSgenome_1.55.4         
-##  [53] VariantAnnotation_1.33.4 hms_0.5.3               
-##  [55] RBGL_1.63.1              RColorBrewer_1.1-2      
-##  [57] yaml_2.2.1               curl_4.3                
-##  [59] memoise_1.1.0            ggplot2_3.3.0           
-##  [61] biomaRt_2.43.5           latticeExtra_0.6-29     
-##  [63] stringi_1.4.6            RSQLite_2.2.0           
-##  [65] genefilter_1.69.0        desc_1.2.0              
-##  [67] checkmate_2.0.0          GenomicFeatures_1.39.7  
-##  [69] rlang_0.4.5              pkgconfig_2.0.3         
-##  [71] bitops_1.0-6             evaluate_0.14           
-##  [73] lattice_0.20-40          purrr_0.3.3             
-##  [75] bit_1.1-15.2             tidyselect_1.0.0        
-##  [77] GSEABase_1.49.1          AnnotationForge_1.29.2  
-##  [79] magrittr_1.5             bookdown_0.18           
-##  [81] R6_2.4.1                 base64url_1.4           
-##  [83] DBI_1.1.0                withr_2.1.2             
-##  [85] pillar_1.4.3             survival_3.1-11         
-##  [87] RCurl_1.98-1.1           tibble_3.0.0            
-##  [89] crayon_1.3.4             BiocFileCache_1.11.5    
-##  [91] rmarkdown_2.1            jpeg_0.1-8.1            
-##  [93] progress_1.2.2           locfit_1.5-9.4          
-##  [95] grid_4.1.0               data.table_1.12.8       
-##  [97] blob_1.2.1               Rgraphviz_2.31.0        
-##  [99] digest_0.6.25            xtable_1.8-4            
-## [101] brew_1.0-6               openssl_1.4.1           
-## [103] munsell_0.5.0            askpass_1.1</code></pre>
+##  [27] limma_3.43.8             formatR_1.7             
+##  [29] htmltools_0.4.0          prettyunits_1.1.1       
+##  [31] tools_4.0.0              gtable_0.3.0            
+##  [33] glue_1.4.0               GenomeInfoDbData_1.2.3  
+##  [35] Category_2.53.1          dplyr_0.8.5             
+##  [37] rsvg_1.3                 batchtools_0.9.13       
+##  [39] rappdirs_0.3.1           V8_3.0.2                
+##  [41] Rcpp_1.0.4.6             pkgdown_1.5.1           
+##  [43] vctrs_0.2.4              rtracklayer_1.47.0      
+##  [45] xfun_0.13                stringr_1.4.0           
+##  [47] lifecycle_0.2.0          XML_3.99-0.3            
+##  [49] edgeR_3.29.1             zlibbioc_1.33.1         
+##  [51] MASS_7.3-51.5            scales_1.1.0            
+##  [53] BSgenome_1.55.4          VariantAnnotation_1.33.5
+##  [55] hms_0.5.3                RBGL_1.63.1             
+##  [57] RColorBrewer_1.1-2       yaml_2.2.1              
+##  [59] curl_4.3                 memoise_1.1.0           
+##  [61] ggplot2_3.3.0            biomaRt_2.43.6          
+##  [63] latticeExtra_0.6-29      stringi_1.4.6           
+##  [65] RSQLite_2.2.0            genefilter_1.69.0       
+##  [67] desc_1.2.0               checkmate_2.0.0         
+##  [69] GenomicFeatures_1.39.7   DOT_0.1                 
+##  [71] rlang_0.4.5              pkgconfig_2.0.3         
+##  [73] bitops_1.0-6             evaluate_0.14           
+##  [75] lattice_0.20-41          purrr_0.3.4             
+##  [77] bit_1.1-15.2             tidyselect_1.0.0        
+##  [79] GSEABase_1.49.1          AnnotationForge_1.29.3  
+##  [81] magrittr_1.5             bookdown_0.18           
+##  [83] R6_2.4.1                 base64url_1.4           
+##  [85] DBI_1.1.0                withr_2.2.0             
+##  [87] pillar_1.4.3             survival_3.1-12         
+##  [89] RCurl_1.98-1.2           tibble_3.0.1            
+##  [91] crayon_1.3.4             BiocFileCache_1.11.6    
+##  [93] rmarkdown_2.1            jpeg_0.1-8.1            
+##  [95] progress_1.2.2           locfit_1.5-9.4          
+##  [97] grid_4.0.0               data.table_1.12.8       
+##  [99] blob_1.2.1               Rgraphviz_2.31.0        
+## [101] digest_0.6.25            xtable_1.8-4            
+## [103] brew_1.0-6               openssl_1.4.1           
+## [105] munsell_0.5.0            askpass_1.1</code></pre>
 </div>
 <div id="funding" class="section level1">
 <h1 class="hasAnchor">

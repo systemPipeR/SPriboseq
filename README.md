@@ -9,8 +9,8 @@
 [![build](http://www.bioconductor.org/shields/build/devel/bioc/systemPipeR.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/systemPipeR/)
 [![updated](http://www.bioconductor.org/shields/lastcommit/devel/bioc/systemPipeR.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/systemPipeR/)
 [![dependencies](http://www.bioconductor.org/shields/dependencies/devel/systemPipeR.svg)](http://www.bioconductor.org/packages/devel/bioc/html/systemPipeR.html#since)
+![R-CMD-check](https://github.com/systemPipeR/systemPipeRIBOseq/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
-
 ### Introduction
 
 [_systemPipeR_](http://www.bioconductor.org/packages/devel/bioc/html/systemPipeR.html)
