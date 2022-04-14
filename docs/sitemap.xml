@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://systempipe.org/SPriboseq//index.html</loc>
+    <loc>https://systempipe.org/SPriboseq/404.html</loc>
   </url>
   <url>
-    <loc>https://systempipe.org/SPriboseq//articles/SPriboseq.html</loc>
+    <loc>https://systempipe.org/SPriboseq/articles/SPriboseq.html</loc>
+  </url>
+  <url>
+    <loc>https://systempipe.org/SPriboseq/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://systempipe.org/SPriboseq/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://systempipe.org/SPriboseq/index.html</loc>
+  </url>
+  <url>
+    <loc>https://systempipe.org/SPriboseq/reference/index.html</loc>
   </url>
 </urlset>

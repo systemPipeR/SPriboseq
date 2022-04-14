@@ -1,10 +1,10 @@
 pandoc: '2.13'
-pkgdown: 1.6.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   SPriboseq: SPriboseq.html
-last_built: 2021-05-06T16:59Z
+last_built: 2022-04-14T02:34Z
 urls:
-  reference: https://systempipe.org/SPriboseq//reference
-  article: https://systempipe.org/SPriboseq//articles
+  reference: https://systempipe.org/SPriboseq/reference
+  article: https://systempipe.org/SPriboseq/articles
 
