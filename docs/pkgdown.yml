@@ -3,7 +3,7 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   SPriboseq: SPriboseq.html
-last_built: 2022-06-01T19:32Z
+last_built: 2022-06-01T20:07Z
 urls:
   reference: https://systempipe.org/SPriboseq/reference
   article: https://systempipe.org/SPriboseq/articles
